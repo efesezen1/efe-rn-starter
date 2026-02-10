@@ -1,5 +1,4 @@
 import Feather from '@expo/vector-icons/Feather';
-import { useRouter } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { Card, cn } from 'heroui-native';
 import type { FC } from 'react';
@@ -62,7 +61,6 @@ const HomeCard: FC<HomeCardProps & { index: number }> = ({
   path,
   index,
 }) => {
-  const router = useRouter();
 
   const { isDark } = useAppTheme();
 
@@ -109,9 +107,9 @@ const HomeCard: FC<HomeCardProps & { index: number }> = ({
           />
         </AnimatedView>
         <View className="gap-4">
-          <Card.Header className="p-3">
+          <Card.Header className="p-2">
           </Card.Header>
-          <Card.Body className="h-16" />
+          {/* <Card.Body className="h-1" /> */}
           <Card.Footer className="px-3 pb-3 flex-row items-end gap-4">
             <View className="flex-1">
               <Card.Title className="text-2xl text-foreground/85">
