@@ -138,7 +138,6 @@ export default function App() {
             title={card.title}
             imageLight={card.imageLight}
             imageDark={card.imageDark}
-            count={card.count}
             footer={card.footer}
             path={card.path}
             index={index}
